@@ -1,4 +1,4 @@
-###AI Agent for Population Queries
+## AI Agent for Population Queries
 
 This is a small project where I built an AI agent that can answer questions about world population using a dataset (CSV file). The agent uses a powerful LLM (LLaMA-3 from Groq) and converts natural language queries into code that runs on the data.
 
