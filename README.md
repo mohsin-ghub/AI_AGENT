@@ -5,7 +5,7 @@ This is a small project where I built an AI agent that can answer questions abou
 ### What it does:
 
 - Loads a population dataset from CSV
-- Lets users ask questions like “What’s the total population of Asia?” or “Which country has the highest population?”
+- Lets users ask questions like “What’s the total population of India?” or “Which country has the highest population?”
 - Uses a language model to convert the question into pandas code
 - Runs the code on the data and gives the answer
 - Supports multiple tools that can be used by the AI depending on the question
