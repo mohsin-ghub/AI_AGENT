@@ -1,0 +1,3 @@
+The population_data tool did not provide the total population of Asia. I will try to find the information manually.
+Asia population data not available from population_data tool. Need to find alternative method.
+The total population of China is 1,419,321,278 as of 2024.

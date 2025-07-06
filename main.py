@@ -3,11 +3,11 @@ import os
 import pandas as pd
 from llama_index.experimental.query_engine import PandasQueryEngine
 from llama_index.llms.groq import Groq
-from prompts import new_prompt, instruction_str
+from prompts import new_prompt, instruction_str, context
 from note_engine import note_engine
 from llama_index.core.tools import QueryEngineTool, ToolMetadata
-from llama_index.agent import ReactAgent
-from llama_index.llms import OpenAI
+from llama_index.core.agent import ReActAgent
+
 
 
 load_dotenv()
@@ -45,7 +45,7 @@ tools = [
         ),
     ),
     QueryEngineTool(
-        query_engine=india_engine,
+        query_engine=note_engine,
         metadata=ToolMetadata(
             name="india_data",
             description="this gives detailed information about india the country",
@@ -57,7 +57,7 @@ agent = ReActAgent.from_tools(
     tools=tools,
     llm=llm,
     verbose=True,
-    context=context
+    context = context
 )  
 
 while (prompt := input("Enter a prompt (e to exit): ")) != "e":
